@@ -11,11 +11,10 @@ int main(int argc, char *argv[]) {
 
 	boostfs::path p(argv[1]);
 
-	if (boostfs::exists(p)) {
+	if (boostfs::exists(p))
 		std::cout << "O arquivo " << p << " existe." << std::endl;
-	} else {
+	else
 		std::cout << "O arquivo " << p << " não existe." << '\n';
-	}
 
 	return 0;
 }
