@@ -3,7 +3,7 @@
 
 namespace boostfs = boost::filesystem;
 
-int main(int argc, char *argv[]) {
+int main_(int argc, char *argv[]) {
 	if (argc <= 1) {
 		std::cerr << "Uso: " << argv[0] << " <nome_do_arquivo>" << std::endl;
 		return 1;
@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
 	if (boostfs::exists(p))
 		std::cout << "O arquivo " << p << " existe." << std::endl;
 	else
-		std::cout << "O arquivo " << p << " não existe." << '\n';
+		std::cout << "O arquivo " << p << " nao existe." << '\n';
 
 	return 0;
 }
