@@ -1,21 +1,24 @@
+#include "ProjetoVS/chkfile.h"
 #include <iostream>
 #include <boost/filesystem.hpp>
 
 using namespace std;
-// namespace boostfs = boost::filesystem;
+namespace boostfs = boost::filesystem;
 
-int main(int argc, char *argv[]) {
+int Chkfile::main(int argc, char* argv[]) {
 	if (argc <= 1) {
 		std::cerr << "Uso: " << argv[0] << " <nome_do_arquivo>" << std::endl;
-		return 1;
+		return EXIT_FAILURE;
 	}
 
-	boost::filesystem::path p(argv[1]);
+	boostfs::path p(argv[1]);
 
-	if (boost::filesystem::exists(p))
+	if (boostfs::exists(p)) {
 		std::cout << "O arquivo " << p << " existe." << std::endl;
-	else
-		std::cout << "O arquivo " << p << " nao existe." << '\n';
-
-	return 0;
+		return EXIT_SUCCESS;
+	}
+	else {
+		std::cout << "O arquivo " << p << " não existe." << std::endl;
+		return EXIT_FAILURE;
+	}
 }

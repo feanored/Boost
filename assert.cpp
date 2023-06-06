@@ -1,3 +1,4 @@
+#include "ProjetoVS/assert.h"
 #include <iostream>
 
 #define BOOST_ENABLE_ASSERTS
@@ -5,7 +6,7 @@
 
 using std::string;
 
-int main() {
+int Assert::main(int argc, char* argv[]) {
 	string name = "";
 
 	std::cout << "Please enter any name: " << std::endl;
@@ -13,5 +14,5 @@ int main() {
 
 	BOOST_ASSERT_MSG(name == "abc", "Burro! Errou esse simples nome.");
 
-	return 0;
+	return EXIT_SUCCESS;
 }
