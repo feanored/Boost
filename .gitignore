@@ -32,6 +32,6 @@
 
 # Visual Studio
 .vs/
-Debug/
+x64/
 *.opendb
 
