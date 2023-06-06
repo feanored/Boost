@@ -1,4 +1,3 @@
-#pragma once
 class Assert {
 public:
 	Assert() = default;

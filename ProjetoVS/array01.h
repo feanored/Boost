@@ -1,4 +1,3 @@
-#pragma once
 class Array01 {
 public:
 	Array01() = default;

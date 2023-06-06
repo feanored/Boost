@@ -1,4 +1,3 @@
-#pragma once
 class Chkfile {
 public:
 	Chkfile() = default;
