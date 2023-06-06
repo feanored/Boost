@@ -1,6 +1,6 @@
-#include "ProjetoVS/chkfile.h"
 #include <iostream>
 #include <boost/filesystem.hpp>
+#include "ProjetoVS/classes.h"
 
 using namespace std;
 namespace boostfs = boost::filesystem;

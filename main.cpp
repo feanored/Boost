@@ -7,9 +7,7 @@
 #endif
 
 // Incluir todas as classes
-#include "ProjetoVS/assert.h"
-#include "ProjetoVS/chkfile.h"
-#include "ProjetoVS/array01.h"
+#include "ProjetoVS/classes.h"
 
 int main(int argc, char* argv[]) {
 #ifdef _WIN32
@@ -23,11 +21,11 @@ int main(int argc, char* argv[]) {
 	Array01 array01;
 
 	// Escolher qual rodar
-	if (array01
+	if (assert
 		.main(argc, argv) == EXIT_FAILURE) {
-		auto _nil = getch();
+		auto _nil = _getch();
 		return EXIT_FAILURE;
 	}
-	auto _nil = getch();
+	auto _nil = _getch();
 	return EXIT_SUCCESS;
 }

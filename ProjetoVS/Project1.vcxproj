@@ -22,12 +22,10 @@
     <ClCompile Include="..\array01.cpp" />
     <ClCompile Include="..\assert.cpp" />
     <ClCompile Include="..\chkfile.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="array01.h" />
-    <ClInclude Include="assert.h" />
-    <ClInclude Include="chkfile.h" />
+    <ClInclude Include="classes.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

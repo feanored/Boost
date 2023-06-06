@@ -1,6 +1,6 @@
-#include "ProjetoVS/array01.h"
 #include <iostream>
 #include <boost/array.hpp>
+#include "ProjetoVS/classes.h"
 
 using namespace std;
 
