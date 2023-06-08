@@ -1,6 +1,5 @@
 #ifdef __linux__
 #include <curses.h>
-#include <stdlib.h>
 #elif _WIN32
 #include <windows.h>
 #include <conio.h>
@@ -10,19 +9,16 @@
 #include "ProjetoVS/classes.h"
 
 int main(int argc, char* argv[]) {
-#ifdef _WIN32
-	SetConsoleCP(1252);          // input   
-	SetConsoleOutputCP(1252);    // output 
-#endif
+	// Input and Output encoding
+	#ifdef _WIN32
+		SetConsoleCP(1252);
+		SetConsoleOutputCP(1252);
+	#endif
 
-	// Instanciá-las
-	Assert assert;
-	Chkfile chkfile;
-	Array01 array01;
+	// Escolher qual classe rodar
+	Array01 classe;
 
-	// Escolher qual rodar
-	if (assert
-		.main(argc, argv) == EXIT_FAILURE) {
+	if (classe.main(argc, argv) == EXIT_FAILURE) {
 		auto _nil = _getch();
 		return EXIT_FAILURE;
 	}
