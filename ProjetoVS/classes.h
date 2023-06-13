@@ -1,19 +1,26 @@
 #include <stdlib.h>
 
-class Chkfile {
+class Runner {
 public:
-	Chkfile() = default;
+	Runner() = default;
+};
+
+class Chkfile : public Runner {
+public:
 	int main(int argc, char* argv[]);
 };
 
-class Assert {
+class Assert : public Runner {
 public:
-	Assert() = default;
 	int main(int argc, char* argv[]);
 };
 
-class Array01 {
+class Array : public Runner {
 public:
-	Array01() = default;
+	int main(int argc, char* argv[]);
+};
+
+class AssignIncrement : public Runner {
+public:
 	int main(int argc, char* argv[]);
 };

@@ -19,8 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\array01.cpp" />
+    <ClCompile Include="..\array.cpp" />
     <ClCompile Include="..\assert.cpp" />
+    <ClCompile Include="..\assign_increment.cpp" />
+    <ClCompile Include="..\assign_insert.cpp" />
+    <ClCompile Include="..\assign_listof.cpp" />
+    <ClCompile Include="..\assign_maplistof.cpp" />
+    <ClCompile Include="..\assign_pushfront.cpp" />
+    <ClCompile Include="..\assign_tupleof.cpp" />
     <ClCompile Include="..\chkfile.cpp" />
     <ClCompile Include="..\main.cpp" />
   </ItemGroup>

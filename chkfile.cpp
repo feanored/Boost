@@ -5,7 +5,9 @@
 using namespace std;
 namespace boostfs = boost::filesystem;
 
-int Chkfile::main(int argc, char* argv[]) {
+int 
+Chkfile::
+main(int argc, char* argv[]) {
 	if (argc <= 1) {
 		std::cerr << "Uso: " << argv[0] << " <nome_do_arquivo>" << std::endl;
 		return EXIT_FAILURE;

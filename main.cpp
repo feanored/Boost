@@ -16,9 +16,9 @@ int main(int argc, char* argv[]) {
 	#endif
 
 	// Escolher qual programa rodar
-	Assert programa;
+	AssignIncrement runner;
 
-	if (programa.main(argc, argv) == EXIT_FAILURE) {
+	if (runner.main(argc, argv) == EXIT_FAILURE) {
 		auto _nil = _getch();
 		return EXIT_FAILURE;
 	}

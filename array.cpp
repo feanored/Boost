@@ -4,7 +4,9 @@
 
 using namespace std;
 
-int Array01::main(int argc, char* argv[]){
+int 
+Array::
+main(int argc, char* argv[]){
 	boost::array<int, 7> arr = {{11,21,31,41,51}};
 
 	for (size_t j=0; j < arr.size(); j++)
