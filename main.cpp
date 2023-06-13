@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
 	#endif
 
 	// Escolher qual classe rodar
-	Array01 classe;
+	Assert classe;
 
 	if (classe.main(argc, argv) == EXIT_FAILURE) {
 		auto _nil = _getch();
