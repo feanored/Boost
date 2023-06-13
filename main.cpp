@@ -15,10 +15,10 @@ int main(int argc, char* argv[]) {
 		SetConsoleOutputCP(1252);
 	#endif
 
-	// Escolher qual classe rodar
-	Assert classe;
+	// Escolher qual programa rodar
+	Assert programa;
 
-	if (classe.main(argc, argv) == EXIT_FAILURE) {
+	if (programa.main(argc, argv) == EXIT_FAILURE) {
 		auto _nil = _getch();
 		return EXIT_FAILURE;
 	}
