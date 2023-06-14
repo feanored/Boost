@@ -1,2 +1,2 @@
 # Boost
-Curso de Boost C++ da Udemy
+Aprendendo sobre a biblioteca Boost C++
