@@ -9,7 +9,7 @@ using std::string;
 using namespace boost::assign;
 
 int 
-AssignListof::
+AssignListOf::
 main() {
 	//===============LISTA====================================
 	std::list<int> lista = list_of(2)(3)(5)(7)(11);

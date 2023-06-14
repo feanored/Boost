@@ -6,6 +6,9 @@
 class Runner {
 public:
 	Runner() = default;
+	bool operator==(const Runner& other) const {
+		return false;
+	}
 };
 
 class Chkfile : public Runner {
@@ -39,7 +42,15 @@ public:
 	int main();
 };
 
-class AssignListof : public Runner {
+class AssignListOf : public Runner {
+public:
+	int main(int argc, char* argv[]) {
+		return main();
+	}
+	int main();
+};
+
+class AssignMapListOf : public Runner {
 public:
 	int main(int argc, char* argv[]) {
 		return main();
