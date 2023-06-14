@@ -8,20 +8,24 @@
 // Incluir todas as classes
 #include "ProjetoVS/classes.h"
 
+int _sair(unsigned short status) {
+	auto _nil = _getch();
+	return status;
+}
+
 int main(int argc, char* argv[]) {
+
+#ifdef _WIN32
 	// Input and Output encoding
-	#ifdef _WIN32
-		SetConsoleCP(1252);
-		SetConsoleOutputCP(1252);
-	#endif
+	SetConsoleCP(1252);
+	SetConsoleOutputCP(1252);
+#endif
 
 	// Escolher qual programa rodar
-	AssignInsert runner;
+	AssignListof runner;
 
-	if (runner.main(argc, argv) == EXIT_FAILURE) {
-		auto _nil = _getch();
-		return EXIT_FAILURE;
-	}
-	auto _nil = _getch();
-	return EXIT_SUCCESS;
+	if (runner.main(argc, argv) == EXIT_SUCCESS)
+		return _sair(EXIT_SUCCESS);
+	else
+		return _sair(EXIT_FAILURE);
 }

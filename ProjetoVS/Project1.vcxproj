@@ -28,9 +28,11 @@
     <ClCompile Include="..\assign_pushfront.cpp" />
     <ClCompile Include="..\assign_tupleof.cpp" />
     <ClCompile Include="..\chkfile.cpp" />
+    <ClCompile Include="..\funcoes.cpp" />
     <ClCompile Include="..\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\funcoes.h" />
     <ClInclude Include="classes.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

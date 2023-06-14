@@ -1,4 +1,7 @@
-#include <stdlib.h>
+#pragma once
+#ifndef CLASSES_H
+#define CLASSES_H
+
 
 class Runner {
 public:
@@ -22,10 +25,27 @@ public:
 
 class AssignIncrement : public Runner {
 public:
-	int main(int argc, char* argv[]);
+	int main(int argc, char* argv[]) {
+		return main();
+	}
+	int main();
 };
 
 class AssignInsert : public Runner {
 public:
-	int main(int argc, char* argv[]);
+	int main(int argc, char* argv[]) {
+		return main();
+	}
+	int main();
 };
+
+class AssignListof : public Runner {
+public:
+	int main(int argc, char* argv[]) {
+		return main();
+	}
+	int main();
+};
+
+
+#endif

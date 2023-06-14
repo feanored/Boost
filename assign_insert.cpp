@@ -1,17 +1,15 @@
 #include <iostream>
 #include <map>
 #include <boost/assign/list_inserter.hpp>	// for insert() operator
-#include <boost/assert.hpp>
 #include "ProjetoVS/classes.h"
-
-#define b_assert BOOST_ASSERT
+#include "funcoes.h"
 
 using namespace boost::assign;	// for insert() operator
 using std::string;
 
 int 
 AssignInsert::
-main(int argc, char* argv[]) {
+main() {
 	// Cria o map
 	std::map<string, int> students;
 
