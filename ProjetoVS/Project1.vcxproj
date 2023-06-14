@@ -30,6 +30,7 @@
     <ClCompile Include="..\chkfile.cpp" />
     <ClCompile Include="..\funcoes.cpp" />
     <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\string_utilities.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\funcoes.h" />

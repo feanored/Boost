@@ -74,5 +74,13 @@ public:
 	int main();
 };
 
+class StringUtilities : public Runner {
+public:
+	int main(int argc, char* argv[]) {
+		return main();
+	}
+	int main();
+};
+
 
 #endif
