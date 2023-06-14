@@ -58,6 +58,14 @@ public:
 	int main();
 };
 
+class AssignTupleListOf : public Runner {
+public:
+	int main(int argc, char* argv[]) {
+		return main();
+	}
+	int main();
+};
+
 class AssignDequePush : public Runner {
 public:
 	int main(int argc, char* argv[]) {
