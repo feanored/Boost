@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
 	#endif
 
 	// Escolher qual programa rodar
-	AssignIncrement runner;
+	AssignInsert runner;
 
 	if (runner.main(argc, argv) == EXIT_FAILURE) {
 		auto _nil = _getch();

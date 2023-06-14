@@ -24,3 +24,8 @@ class AssignIncrement : public Runner {
 public:
 	int main(int argc, char* argv[]);
 };
+
+class AssignInsert : public Runner {
+public:
+	int main(int argc, char* argv[]);
+};

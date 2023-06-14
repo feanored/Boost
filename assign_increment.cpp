@@ -1,38 +1,41 @@
-#include <iostream>			// cout, endl
-#include <boost/assign/std/vector.hpp>		// for vector & '+=' operator
+#include <iostream>
+#include <boost/assign/std/vector.hpp>
 #include <boost/assert.hpp>	
 #include "ProjetoVS/classes.h"
 
-using namespace boost::assign;		// for += operator 
+#define b_assert BOOST_ASSERT
+
+using namespace boost::assign;	// for += operator 
+
 
 int 
 AssignIncrement::
 main(int argc, char* argv[]) {
-	std::vector<int> v1;
+	std::vector<int> vec;
 
 	// assign
-	v1 += 1, 2, 3, 4, 5;
+	vec += 10, 20, 30, 40, 50;
 
 	// assert
-	BOOST_ASSERT(v1.size() == 5);		// nothing, if true
-	BOOST_ASSERT(v1[0] == 1);			// nothing, if true
-	BOOST_ASSERT(v1[4] == 5);			// nothing, if true
+	b_assert(vec.size() == 5);
+	b_assert(vec[0] == 10);
+	b_assert(vec[4] == 50);
 
 		
 	// Método-1 de acesso
 	// std::vector<int>::iterator -> auto
-	for (auto i = v1.begin(); i != v1.end(); ++i)
+	for (auto i = vec.begin(); i != vec.end(); ++i)
 		std::cout << *i << " ";
 	std::cout << std::endl;
 
 	// Método-2 de acesso
-	for (int i = v1.size() - 1; i >= 0; --i)
-		std::cout << v1.at(i) << " ";
+	for (size_t i = vec.size(); i > 0; --i)		// size_t é unsigned, não lida com negativos
+		std::cout << vec.at(i-1) << " ";
 	std::cout << std::endl;
 
 	// Método-3 de acesso
-	for (size_t i = 0; i < v1.size(); ++i)
-		std::cout << i << ": " << v1[i] << "; ";
+	for (auto i = 0; i < vec.size(); ++i)
+		std::cout << i << ": " << vec[i] << "; ";
 	std::cout << std::endl;
 
 	return EXIT_SUCCESS;
