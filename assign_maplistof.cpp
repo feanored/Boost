@@ -1,6 +1,5 @@
 #include <iostream>
 #include <map>
-#include <list>
 #include <boost/assign/list_of.hpp>
 #include "ProjetoVS/classes.h"
 #include "funcoes.h"

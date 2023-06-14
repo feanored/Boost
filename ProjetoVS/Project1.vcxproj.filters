@@ -39,7 +39,7 @@
     <ClCompile Include="..\assign_maplistof.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="..\assign_pushfront.cpp">
+    <ClCompile Include="..\assign_dequepush.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="..\assign_tupleof.cpp">
