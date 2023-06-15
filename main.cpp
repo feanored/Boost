@@ -22,7 +22,7 @@ int main(int argc, char* argv[]) {
 #endif
 
 	// Escolher qual programa rodar
-	StringUtilities runner;
+	DequeElement runner;
 
 	if (runner.main(argc, argv) == EXIT_SUCCESS)
 		return _sair(EXIT_SUCCESS);

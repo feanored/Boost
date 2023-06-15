@@ -6,5 +6,6 @@
 #define b_assert BOOST_ASSERT
 
 void enter();
+void enter(unsigned int qtd);
 
 #endif

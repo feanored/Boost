@@ -82,5 +82,13 @@ public:
 	int main();
 };
 
+class DequeElement : public Runner {
+public:
+	int main(int argc, char* argv[]) {
+		return main();
+	}
+	int main();
+};
+
 
 #endif
