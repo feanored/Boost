@@ -60,9 +60,6 @@
     <ClCompile Include="..\elements_map.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="..\elements_multimap.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
     <ClCompile Include="..\elements_multiset.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>

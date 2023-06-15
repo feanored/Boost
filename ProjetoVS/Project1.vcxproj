@@ -31,7 +31,6 @@
     <ClCompile Include="..\elements_deque.cpp" />
     <ClCompile Include="..\elements_list.cpp" />
     <ClCompile Include="..\elements_map.cpp" />
-    <ClCompile Include="..\elements_multimap.cpp" />
     <ClCompile Include="..\elements_multiset.cpp" />
     <ClCompile Include="..\elements_set.cpp" />
     <ClCompile Include="..\elements_stack.cpp" />
