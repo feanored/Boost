@@ -5,8 +5,8 @@
 #include "ProjetoVS/classes.h"
 #include "funcoes.h"
 
-using std::string;
 using namespace boost::assign;
+using std::string;
 
 int 
 MapElement::

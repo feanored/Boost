@@ -1,6 +1,5 @@
 #include <iostream>
 #include <list>
-#include <algorithm>
 #include <boost/assign/list_inserter.hpp>
 #include <boost/assign/list_of.hpp>
 #include "ProjetoVS/classes.h"
