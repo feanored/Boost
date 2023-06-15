@@ -2,7 +2,6 @@
 #ifndef CLASSES_H
 #define CLASSES_H
 
-
 class Runner {
 public:
 	Runner() = default;
@@ -90,5 +89,60 @@ public:
 	int main();
 };
 
+class ListElement : public Runner {
+public:
+	int main(int argc, char* argv[]) {
+		return main();
+	}
+	int main();
+};
+
+class MapElement : public Runner {
+public:
+	int main(int argc, char* argv[]) {
+		return main();
+	}
+	int main();
+};
+
+class MultimapElement : public Runner {
+public:
+	int main(int argc, char* argv[]) {
+		return main();
+	}
+	int main();
+};
+
+class MultisetElement : public Runner {
+public:
+	int main(int argc, char* argv[]) {
+		return main();
+	}
+	int main();
+};
+
+class SetElement : public Runner {
+public:
+	int main(int argc, char* argv[]) {
+		return main();
+	}
+	int main();
+};
+
+class StackElement : public Runner {
+public:
+	int main(int argc, char* argv[]) {
+		return main();
+	}
+	int main();
+};
+
+class VectorElement : public Runner {
+public:
+	int main(int argc, char* argv[]) {
+		return main();
+	}
+	int main();
+};
 
 #endif
