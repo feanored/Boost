@@ -33,5 +33,6 @@
 # Visual Studio
 .vs/
 x64/
+out/
 *.opendb
 
