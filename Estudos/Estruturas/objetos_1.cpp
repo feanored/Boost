@@ -44,9 +44,9 @@ public:
 	// Overload + operator to add two objects and returning a new one.
 	Data operator+(const Data& b) {
 		Data a;
-		a.dia = this->dia + b.dia;
-		a.mes = this->mes + b.mes;
-		a.ano = this->ano + b.ano;
+		a.setAno(this->ano + b.ano);
+		a.setMes(this->mes + b.mes);
+		a.setDia(this->dia + b.dia);
 		return a;
 	}
 
@@ -88,7 +88,8 @@ public:
  };
 
  int main() {
- 	Data d1, d3;
+ 	Data d1;
+	d1.show();
  	d1.setDia(6);
  	d1.setMes(8);
  	d1.setAno(1991);
@@ -106,7 +107,8 @@ public:
  	d2.show();
  	enter();
 
- 	d3 = d1 + d2;
+	d1.setDia(30);
+ 	Data d3 = d1 + d2;
  	d3.show();
  	d1.show();
  	d2.show();
